@@ -12,9 +12,9 @@
 
     {{! Everything below outputs content of the the post which has been published }}
     <h2 class="post-title"><a href="{{url}}">{{title}}</a></h2>
-    
+
     <section class="post-content">
-      {{content}}
+      <p>{{trimString content 0 60}}</p>
     </section>
 
     {{/post}}
